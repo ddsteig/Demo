@@ -1,6 +1,6 @@
 // Global Variables
 
-var key = "7aca6d5582fe8abbe1cd2a78e0c485b9";
+const key = '7aca6d5582fe8abbe1cd2a78e0c485b9';
 
 let savedCity = [];
 
@@ -107,7 +107,6 @@ function getWeather(city) {
         $("#weather-card-" + i).append(img, p1, p2, p3);
         
       }
-      for (i = 1; i < 6; i++) {
 
         Highcharts.chart('container', {
           chart: {
@@ -151,7 +150,7 @@ function getWeather(city) {
       
           },],
         });
-      }
+      
     });
 
     // Current weather forecast displayed on main card.
