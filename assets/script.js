@@ -79,7 +79,7 @@ function getWeather(city) {
       method: "GET",
     }).then(function (dailyresponse) {
       // For Loop to display weather info the 5 cards on the page.
-      // let weekForecast = [];
+      let weekForecast = [];
       let weekDailyHigh = [];
       let weekDailyLow = [];
       for (i = 1; i < 6; i++) {
