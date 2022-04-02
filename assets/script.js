@@ -162,6 +162,11 @@ function getWeather(city) {
             marker: {
               symbol: "diamond",
               fillColor: "#ffa500b2",
+              states: {
+                hover: {
+                  fillColor: "#ffa500b2",
+                },
+              },
             },
             data: [
               weekDailyHigh[0],
@@ -177,6 +182,11 @@ function getWeather(city) {
             marker: {
               symbol: "diamond",
               fillColor: "#1ca0a0b2",
+              states: {
+                hover: {
+                  fillColor: "#1ca0a0b2",
+                },
+              },
             },
             data: [
               weekDailyLow[0],
