@@ -108,11 +108,11 @@ function getWeather(city) {
 
         $("#weather-card-" + i).append(img, p1, p2, p3);
     
-        weekForecast.push(dailyDate)
-        weekDailyHigh.push(dailyHigh)
-        weekDailyLow.push(dailyLow)
+        weekForecast.push(dailyDate);
+        weekDailyHigh.push(dailyHigh);
+        weekDailyLow.push(dailyLow);
       };
-      console.log(weekForecast)
+      console.log(...weekForecast);
       Highcharts.chart('container', {
         chart: {
             type: 'spline'
