@@ -110,13 +110,13 @@ function getWeather(city) {
         weekDailyHigh.push(dailyHigh);
         weekDailyLow.push(dailyLow);
       }
-      
+
       Highcharts.chart("container", {
         chart: {
           type: "spline",
         },
         title: {
-          text: "Five Day Forecast",
+          text: "Five Day High/Low Forecast",
         },
         subtitle: {
           text: "Source: Open Weather API",
@@ -127,7 +127,7 @@ function getWeather(city) {
             weekForecast[1],
             weekForecast[2],
             weekForecast[3],
-            weekForecast[4]
+            weekForecast[4],
           ],
         },
         yAxis: {
@@ -164,7 +164,7 @@ function getWeather(city) {
               weekDailyHigh[1],
               weekDailyHigh[2],
               weekDailyHigh[3],
-              weekDailyHigh[4]
+              weekDailyHigh[4],
             ],
           },
           {
@@ -177,7 +177,7 @@ function getWeather(city) {
               weekDailyLow[1],
               weekDailyLow[2],
               weekDailyLow[3],
-              weekDailyLow[4]
+              weekDailyLow[4],
             ],
           },
         ],
