@@ -158,9 +158,9 @@ function getWeather(city) {
         series: [
           {
             name: "Daily High",
+            lineColor: "#ffa500b2",
             marker: {
               symbol: "diamond",
-              lineColor: "#ffa500b2",
             },
             data: [
               weekDailyHigh[0],
@@ -172,9 +172,9 @@ function getWeather(city) {
           },
           {
             name: "Daily Low",
+            lineColor: "#1ca0a0b2",
             marker: {
               symbol: "diamond",
-              lineColor: "#1ca0a0b2",
             },
             data: [
               weekDailyLow[0],
