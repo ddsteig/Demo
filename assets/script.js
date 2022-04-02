@@ -82,7 +82,7 @@ function getWeather(city) {
     }).then(function (dailyresponse) {
       
       // For Loop to display weather info the 5 cards on the page.
-
+      let weekForecast = []
       for (i = 1; i < 6; i++) {
         
         $("#weather-card-" + i).empty();
@@ -106,7 +106,9 @@ function getWeather(city) {
 
         $("#weather-card-" + i).append(img, p1, p2, p3);
         
+        weekForecast.push(dailyDate)
       }
+      console.log(weekForecast)
     });
 
     Highcharts.chart('container', {
