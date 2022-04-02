@@ -106,11 +106,11 @@ function getWeather(city) {
 
         $("#weather-card-" + i).append(img, p1, p2, p3);
 
-        // weekForecast.push(dailyDate);
+        weekForecast.push(dailyDate);
         weekDailyHigh.push(dailyHigh);
         weekDailyLow.push(dailyLow);
       }
-      let weekForecast = ["4/3/2022", "4/4/2022", "4/5/2022", "4/6/2022", "4/7/2022"]
+      // let weekForecast = ["4/3/2022", "4/4/2022", "4/5/2022", "4/6/2022", "4/7/2022"]
       console.log(weekForecast);
 
       Highcharts.chart("container", {
