@@ -124,7 +124,9 @@ function getWeather(city) {
           text: "Source: Open Weather API",
         },
         xAxis: {
-          categories: [weekForecast],
+          categories: [
+            weekForecast[0]
+          ],
         },
         yAxis: {
           title: {
@@ -155,14 +157,18 @@ function getWeather(city) {
             marker: {
               symbol: "square",
             },
-            data: [weekDailyHigh],
+            data: [
+              weekDailyHigh[0]
+            ],
           },
           {
             name: "Daily Low",
             marker: {
               symbol: "diamond",
             },
-            data: [weekDailyLow],
+            data: [
+              weekDailyLow[0]
+            ],
           },
         ],
       });
