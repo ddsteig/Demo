@@ -124,7 +124,13 @@ function getWeather(city) {
             text: 'Source: Open Weather API'
         },
         xAxis: {
-            categories: [weekForecast]
+            categories: [
+              weekForecast[0],
+              weekForecast[1],
+              weekForecast[2],
+              weekForecast[3],
+              weekForecast[4],
+      ]
         },
         yAxis: {
             title: {
