@@ -161,6 +161,7 @@ function getWeather(city) {
             lineColor: "#ffa500b2",
             marker: {
               symbol: "diamond",
+              lineColor: "#ffa500b2",
             },
             data: [
               weekDailyHigh[0],
@@ -175,6 +176,7 @@ function getWeather(city) {
             lineColor: "#1ca0a0b2",
             marker: {
               symbol: "diamond",
+              lineColor: "#1ca0a0b2",
             },
             data: [
               weekDailyLow[0],
