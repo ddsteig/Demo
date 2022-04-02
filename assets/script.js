@@ -79,7 +79,7 @@ function getWeather(city) {
       method: "GET",
     }).then(function (dailyresponse) {
       // For Loop to display weather info the 5 cards on the page.
-      let weekForecast = [];
+      // let weekForecast = [];
       let weekDailyHigh = [];
       let weekDailyLow = [];
       for (i = 1; i < 6; i++) {
@@ -106,11 +106,11 @@ function getWeather(city) {
 
         $("#weather-card-" + i).append(img, p1, p2, p3);
 
-        weekForecast.push(dailyDate);
+        // weekForecast.push(dailyDate);
         weekDailyHigh.push(dailyHigh);
         weekDailyLow.push(dailyLow);
       }
-
+      let weekForecast = ["4/3/2022", "4/4/2022", "4/5/2022", "4/6/2022", "4/7/2022"]
       console.log(weekForecast);
 
       Highcharts.chart("container", {
@@ -125,7 +125,8 @@ function getWeather(city) {
         },
         xAxis: {
           categories: [
-            weekForecast[0]
+            weekForecast[0],
+            weekForecast[1]
           ],
         },
         yAxis: {
@@ -158,7 +159,8 @@ function getWeather(city) {
               symbol: "square",
             },
             data: [
-              weekDailyHigh[0]
+              weekDailyHigh[0],
+              weekDailyHigh[1]
             ],
           },
           {
@@ -167,7 +169,8 @@ function getWeather(city) {
               symbol: "diamond",
             },
             data: [
-              weekDailyLow[0]
+              weekDailyLow[0],
+              weekDailyLow[1]
             ],
           },
         ],
