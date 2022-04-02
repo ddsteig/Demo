@@ -111,6 +111,8 @@ function getWeather(city) {
         weekDailyLow.push(dailyLow);
       }
 
+      // Added chart for 5 day temperatures from Highcharts utlizing Open Weather API
+
       Highcharts.chart("container", {
         chart: {
           type: "spline",
@@ -157,7 +159,8 @@ function getWeather(city) {
           {
             name: "Daily High",
             marker: {
-              symbol: "square",
+              symbol: "diamond",
+              lineColor: "#ffa500b2",
             },
             data: [
               weekDailyHigh[0],
@@ -171,6 +174,7 @@ function getWeather(city) {
             name: "Daily Low",
             marker: {
               symbol: "diamond",
+              lineColor: "#1ca0a0b2",
             },
             data: [
               weekDailyLow[0],
