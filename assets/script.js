@@ -108,7 +108,7 @@ function getWeather(city) {
     
         weekForecast.push(dailyDate)
         console.log(weekForecast)
-      }
+      };
       
       Highcharts.chart('container', {
         chart: {
@@ -121,8 +121,7 @@ function getWeather(city) {
             text: 'Source: WorldClimate.com'
         },
         xAxis: {
-            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            categories: [weekForecast]
         },
         yAxis: {
             title: {
