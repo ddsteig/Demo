@@ -110,9 +110,7 @@ function getWeather(city) {
         weekDailyHigh.push(dailyHigh);
         weekDailyLow.push(dailyLow);
       }
-      // let weekForecast = ["4/3/2022", "4/4/2022", "4/5/2022", "4/6/2022", "4/7/2022"]
-      console.log(weekForecast);
-
+      
       Highcharts.chart("container", {
         chart: {
           type: "spline",
@@ -126,7 +124,10 @@ function getWeather(city) {
         xAxis: {
           categories: [
             weekForecast[0],
-            weekForecast[1]
+            weekForecast[1],
+            weekForecast[2],
+            weekForecast[3],
+            weekForecast[4]
           ],
         },
         yAxis: {
@@ -160,7 +161,10 @@ function getWeather(city) {
             },
             data: [
               weekDailyHigh[0],
-              weekDailyHigh[1]
+              weekDailyHigh[1],
+              weekDailyHigh[2],
+              weekDailyHigh[3],
+              weekDailyHigh[4]
             ],
           },
           {
@@ -170,7 +174,10 @@ function getWeather(city) {
             },
             data: [
               weekDailyLow[0],
-              weekDailyLow[1]
+              weekDailyLow[1],
+              weekDailyLow[2],
+              weekDailyLow[3],
+              weekDailyLow[4]
             ],
           },
         ],
