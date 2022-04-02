@@ -105,12 +105,13 @@ function getWeather(city) {
         p3.text("Humidity: " + dailyHumid);
 
         $("#weather-card-" + i).append(img, p1, p2, p3);
-        
+        console.log(dailyDate)
         weekForecast.push(dailyDate)
+        console.log(weekForecast)
       }
       
     });
-    console.log(weekForecast)
+    
     Highcharts.chart('container', {
       chart: {
           type: 'spline'
