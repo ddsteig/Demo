@@ -112,7 +112,8 @@ function getWeather(city) {
         weekDailyHigh.push(dailyHigh);
         weekDailyLow.push(dailyLow);
       };
-      console.log(...weekForecast);
+      weekForecast.splot()
+      console.log(weekForecast);
       Highcharts.chart('container', {
         chart: {
             type: 'spline'
@@ -125,7 +126,7 @@ function getWeather(city) {
         },
         xAxis: {
             categories: [
-              ...weekForecast
+              weekForecast
       ]
         },
         yAxis: {
