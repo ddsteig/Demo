@@ -113,7 +113,7 @@ function getWeather(city) {
         weekDailyLow.push(dailyLow);
       };
       console.log(...weekForecast);
-      Highcharts.chart('container', {
+      Highcharts.chart('container', weekForecast, {
         chart: {
             type: 'spline'
         },
