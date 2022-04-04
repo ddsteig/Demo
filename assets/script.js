@@ -145,7 +145,6 @@ function getWeather(city) {
         tooltip: {
           crosshairs: true,
           shared: true,
-          pointFormat: '<span style="color:black">\u25CF</span> {series.Daily High}: <b>{point.y}</b><br/>',
         },
         plotOptions: {
           spline: {
@@ -159,6 +158,10 @@ function getWeather(city) {
         series: [
           {
             name: "Daily High",
+            tooltip: {
+              pointFormat:
+                '<span style="color:#ffa500b2">\u25CF</span> {series.name}: <b>{point.y}</b><br/>',
+            },
             lineColor: "#ffa500b2",
             marker: {
               symbol: "diamond",
@@ -174,6 +177,10 @@ function getWeather(city) {
           },
           {
             name: "Daily Low",
+            tootip: {
+              pointFormat:
+                '<span style="color:#1ca0a0b2">\u25CF</span> {series.name}: <b>{point.y}</b><br/>',
+            },
             lineColor: "#1ca0a0b2",
             marker: {
               symbol: "diamond",
