@@ -177,10 +177,6 @@ function getWeather(city) {
           },
           {
             name: "Daily Low",
-            tootip: {
-              pointFormat:
-                '<span style="color:#1ca0a0b2">\u25CF</span> {series.name}: <b>{point.y}</b><br/>',
-            },
             lineColor: "#1ca0a0b2",
             marker: {
               symbol: "diamond",
