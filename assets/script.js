@@ -145,6 +145,7 @@ function getWeather(city) {
         tooltip: {
           crosshairs: true,
           shared: true,
+          pointFormat: '<span style="color:#ffa500b2">\u25CF</span> {series.Daily High}: <b>{point.y}</b><br/>'
         },
         plotOptions: {
           spline: {
