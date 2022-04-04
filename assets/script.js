@@ -160,7 +160,7 @@ function getWeather(city) {
             name: "Daily High",
             tooltip: {
               pointFormat:
-                '{series.name}: <span style="color: {#ffa500b2};"> {point.y} </span>',
+                '<span style="color:#ffa500b2">\u25CF</span> {series.name}: <b>{point.y}</b><br/>',
             },
             lineColor: "#ffa500b2",
             marker: {
@@ -179,7 +179,7 @@ function getWeather(city) {
             name: "Daily Low",
             tootip: {
               pointFormat:
-                '{series.name}: <span style="color: {#1ca0a0b2};"> {point.y} </span>',
+                '<span style="color:#1ca0a0b2">\u25CF</span> {series.name}: <b>{point.y}</b><br/>',
             },
             lineColor: "#1ca0a0b2",
             marker: {
