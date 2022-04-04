@@ -123,3 +123,11 @@ footer {
   background: rgba(28, 160, 160, 0.699);
   font-weight: bold;
 }
+
+.dailyHigh.highcharts-color-0 {
+  fill: "#ffa500b2";
+}
+
+.dailyLow.highcharts-color-0 {
+  fill: "#1ca0a0b2";
+}

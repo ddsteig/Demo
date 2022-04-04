@@ -157,6 +157,7 @@ function getWeather(city) {
         },
         series: [
           {
+            className: "dailyHigh",
             name: "Daily High",
             lineColor: "#ffa500b2",
             marker: {
@@ -172,6 +173,7 @@ function getWeather(city) {
             ],
           },
           {
+            className: "dailyLow",
             name: "Daily Low",
             lineColor: "#1ca0a0b2",
             marker: {
