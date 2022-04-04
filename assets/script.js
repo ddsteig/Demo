@@ -178,7 +178,6 @@ function getWeather(city) {
               symbol: "diamond",
               fillColor: "#1ca0a0b2",
             },
-            },
             data: [
               weekDailyLow[0],
               weekDailyLow[1],
